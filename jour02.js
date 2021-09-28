@@ -14,7 +14,7 @@ console.log(stringified)
 // Round
 
 var num = 1.5
-rounded = Math.round (1.5)
+rounded = Math.round (num)
 console.log(rounded)
 
 // Arithmétique
@@ -25,6 +25,8 @@ console.log(test + bis)
 console.log(test - bis)
 console.log(test * bis)
 console.log(test / bis)
+console.log(test ** bis)
+console.log(test % bis)
 
 // Comparaison
 
@@ -35,6 +37,10 @@ console.log(test < bis)
 console.log(test = bis)
 console.log(test >= bis)
 console.log(test <= bis)
+console.log(test == bis)
+console.log(test === bis)
+console.log(test != bis)
+console.log(test !== bis)
 
 // Condition
 
@@ -67,19 +73,20 @@ if(score >= limit && password.length > 5){
 }
 
 // Bonus 
-var min = ''
+var min = 1
 var max = 6
-Math.floor(Math.random() * (max - min + 1) + min)
+var random = Math.floor(Math.random() * (max - min + 1) + min)
 
-// if(random === 6){
-//     console.log("Yes I win !")
-// }else{
-//     console.log("So close...")
-// }
+if(random === 6){
+    console.log("Yes I win !")
+}else{
+    console.log("So close...")
+}
 
 // // Bonus 2
 
 var month = "January"
+
 switch (month) {
 	case "January": 
 		console.log("Winter");
@@ -93,7 +100,7 @@ switch (month) {
 	case "April": 
 		console.log("Spring");
 		break;
-    case "Mai": 
+    case "May": 
 		console.log("Spring");
 		break;
 	case "June": 
@@ -114,6 +121,34 @@ switch (month) {
 	case "November": 
 		console.log("Autumn");
 		break;
+	case "December": 
+		console.log("Autumn");
+		break;
+}
+
+// =
+
+switch (month) {
+	case "January": 
+	case "February": 
+	case "March": 
+		console.log("Winter");
+		break;
+	
+    case "April": 
+    case "May": 
+	case "June": 
+		console.log("Spring");
+		break;
+	
+    case "Juillet": 
+	case "Aout": 
+    case "September": 
+		console.log("Summer");
+		break;
+	
+    case "October": 
+	case "November": 
 	case "December": 
 		console.log("Autumn");
 		break;
